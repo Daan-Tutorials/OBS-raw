@@ -70,7 +70,7 @@ Now that you know what you can put it in
 ```json
 {
 "request-type": "SetSourceSettings",
-"sourceName": "source name",
+"sourceName": "your source name",
 "sourceSettings": {
  "": "",
  },
@@ -81,7 +81,7 @@ But to know what source settings exist you need to do GetSourceSettings
 
 ```json
 "request-type": "GetSourceSettings",
-"sourceName": "source name",
+"sourceName": "your source name",
 ```
 
 Now that we know that for this color source we can change the color/height and width (these things are diffrent depending on the source)
@@ -89,7 +89,7 @@ Now that we know that for this color source we can change the color/height and w
 ```json
 {
 "request-type": "SetSourceSettings",
-"sourceName": "source name",
+"sourceName": "your source name",
 "sourceSettings": {
   "color": 4278190335
   "height": 500
