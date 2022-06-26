@@ -69,7 +69,7 @@ Now that you know that you can put it in
 
 ```json
 {
-"request-type": "SetSourceSettings".
+"request-type": "SetSourceSettings",
 "sourceName": "source name",
 "sourceSettings": {
 
@@ -80,7 +80,7 @@ Now that you know that you can put it in
 But to know what source settings exist you need to do GetSourceSettings
 
 ```json
-"request-type": "GetSourceSettings".
+"request-type": "GetSourceSettings",
 "sourceName": "source name",
 ```
 
@@ -88,7 +88,7 @@ Now that we know that for this color source we can change the color/height and w
 
 ```json
 {
-"request-type": "SetSourceSettings".
+"request-type": "SetSourceSettings",
 "sourceName": "source name",
 "sourceSettings": {
   "color": 4278190335
@@ -96,8 +96,7 @@ Now that we know that for this color source we can change the color/height and w
   "width": 200
  },
 }
-
+```
 color: Needs to be ABGR with the `Pick Color` sub-action you can convert the color to ABGR rather easily, It is a number so it doesn't need ""
 height: It is a number so it doesn't need ""
 width: It is a number so it doesn't need ""
-```
