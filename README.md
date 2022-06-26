@@ -20,9 +20,9 @@ Here a basic example.
 "request-type": "TheRequestType",
 "sceneName": "your scene name",
 "sourceSettings": {
-  "color": 4279410288,
-  "name": "your name",
- },
+"color": 4279410288,
+"name": "your name",
+},
 }
 ```
 
@@ -38,7 +38,66 @@ If your doing a sub branch like `sourceSettings` or `filterSettings` you need to
 
 ```json
 "sourceSettings": {
-  "color": 4279410288,
-  "name": "your name",
-  },
-  ```
+"color": 4279410288,
+"name": "your name",
+},
+```
+---
+
+## Now you know how the basics work where gonna make a request that you're probaly gonna use.
+
+First you need to do the brackets.
+
+```json
+{
+
+}
+```
+
+Then you need to add the request type.
+
+
+```json
+{
+"request-type": "SetSourceSettings"
+}
+```
+
+Then you need to know what elements your gonna use [SetSourceSettings](https://github.com/obsproject/obs-websocket/blob/4.x-current/docs/generated/protocol.md#setsourcesettings)
+
+Now that you know that you can put it in
+
+```json
+{
+"request-type": "SetSourceSettings".
+"sourceName": "source name",
+"sourceSettings": {
+
+ },
+}
+```
+
+But to know what source settings exist you need to do GetSourceSettings
+
+```json
+"request-type": "GetSourceSettings".
+"sourceName": "source name",
+```
+
+Now that we know that for this color source we can change the color/height and width (these things are diffrent depending on the source)
+
+```json
+{
+"request-type": "SetSourceSettings".
+"sourceName": "source name",
+"sourceSettings": {
+  "color": 4278190335
+  "height": 500
+  "width": 200
+ },
+}
+
+color: Needs to be ABGR with the `Pick Color` sub-action you can convert the color to ABGR rather easily, It is a number so it doesn't need ""
+height: It is a number so it doesn't need ""
+width: It is a number so it doesn't need ""
+```
