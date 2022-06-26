@@ -44,7 +44,7 @@ If your doing a sub branch like `sourceSettings` or `filterSettings` you need to
 ```
 ---
 
-## Now you know how the basics work where gonna make a request that you're probaly gonna use.
+## Now you know how the basics work where gonna make a request that you're probably gonna use.
 
 First you need to do the brackets.
 
