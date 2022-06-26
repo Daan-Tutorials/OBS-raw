@@ -20,7 +20,7 @@ Here a basic example.
 "request-type": "TheRequestType",
 "sceneName": "your scene name",
 "sourceSettings": {
-"color": 4279410288,
+"color": 4278255360,
 "name": "your name",
  },
 }
@@ -63,9 +63,9 @@ Then you need to add the request type.
 }
 ```
 
-Then you need to know what elements your gonna use [SetSourceSettings](https://github.com/obsproject/obs-websocket/blob/4.x-current/docs/generated/protocol.md#setsourcesettings)
+Then you need to know what elements your gonna use with [SetSourceSettings](https://github.com/obsproject/obs-websocket/blob/4.x-current/docs/generated/protocol.md#setsourcesettings) (all info in this link)
 
-Now that you know that you can put it in
+Now that you know what you can put it in
 
 ```json
 {
@@ -98,5 +98,7 @@ Now that we know that for this color source we can change the color/height and w
 }
 ```
 color: Needs to be ABGR with the `Pick Color` sub-action you can convert the color to ABGR rather easily, It is a number so it doesn't need ""
+
 height: It is a number so it doesn't need ""
+
 width: It is a number so it doesn't need ""
