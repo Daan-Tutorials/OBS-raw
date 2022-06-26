@@ -72,7 +72,7 @@ Now that you know what you can put it in
 "request-type": "SetSourceSettings",
 "sourceName": "source name",
 "sourceSettings": {
-
+ "": "",
  },
 }
 ```
