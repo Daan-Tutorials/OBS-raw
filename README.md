@@ -22,7 +22,7 @@ Here a basic example.
 "sourceSettings": {
 "color": 4279410288,
 "name": "your name",
-},
+ },
 }
 ```
 
